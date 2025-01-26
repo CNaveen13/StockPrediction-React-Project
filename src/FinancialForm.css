@@ -1,0 +1,93 @@
+/* FinancialForm.css */
+
+.form-container {
+  max-width: 800px; /* Increased max width */
+  width: 100%; /* Ensure it's responsive */
+  margin: 40px auto;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Added gap between form elements */
+}
+
+.form-container div {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+  text-align: left; /* Align labels to the left */
+}
+
+.form-container input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container button:focus {
+  outline: none;
+}
+
+.form-container .loader {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Media Query for smaller devices */
+@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 20px; /* Reduced padding for smaller screens */
+    width: 90%;
+  }
+
+  .form-container label {
+    font-size: 14px; /* Slightly smaller labels */
+  }
+
+  .form-container input {
+    font-size: 14px; /* Smaller input font size */
+  }
+
+  .form-container button {
+    font-size: 16px; /* Smaller button font size */
+    padding: 12px;
+  }
+
+  .form-container .loader {
+    margin-top: 15px;
+  }
+}
